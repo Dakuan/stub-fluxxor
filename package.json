@@ -1,7 +1,7 @@
 {
   "name": "stub-fluxxor",
   "version": "0.0.1",
-  "description": "Stubs the Fluxxor object while running tests ",
+  "description": "Stubs the Fluxxor object while running tests",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/minijasminenode2/bin/minijn spec.js"
@@ -11,7 +11,7 @@
     "url": "https://github.com/Dakuan/stub-fluxxor.git"
   },
   "keywords": [
-    "fluxxor"
+    "fluxxor", "testing", "mocks", "stubs", "flux", "react"
   ],
   "author": {
     "name": "Dominic Barker",
