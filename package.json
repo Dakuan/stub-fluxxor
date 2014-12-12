@@ -1,0 +1,33 @@
+{
+  "name": "stub-fluxxor",
+  "version": "0.0.1",
+  "description": "Stubs the Fluxxor object while running tests ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/minijasminenode2/bin/minijn spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dakuan/stub-fluxxor.git"
+  },
+  "keywords": [
+    "fluxxor"
+  ],
+  "author": {
+    "name": "Dominic Barker",
+    "email": "dom.barker808@gmail.com",
+    "url": "http://www.dombarker.co.uk"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dakuan/stub-fluxxor/issues"
+  },
+  "homepage": "https://github.com/Dakuan/stub-fluxxor",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "minijasminenode2": "^1.0.0"
+  }
+}
