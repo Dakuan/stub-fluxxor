@@ -1,6 +1,6 @@
 {
   "name": "stub-fluxxor",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Stubs the Fluxxor object while running tests",
   "main": "index.js",
   "scripts": {
