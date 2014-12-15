@@ -35,7 +35,7 @@ describe("StubFluxxor", function() {
         });
 
         it("should stub event emitter methods", function() {
-        	expect(subject.store('storeOne').on()).toBeUndefined();
+            expect(subject.store('storeOne').on()).toBeUndefined();
         });
 
         it("should not include properties", function() {
@@ -49,6 +49,21 @@ describe("StubFluxxor", function() {
             expect(function() {
                 subject.store('rubbish!');
             }).toThrow();
+        });
+    });
+
+    describe("actions", function() {
+        beforeEach(function() {
+            subject = new StubFluxxor({}, {
+                thing: function() {},
+                foo: {
+                    bar: function() {}
+                }
+            });
+        });
+        it("should stash the provided actions", function() {
+            expect(subject.actions.thing).toBeDefined();
+            expect(subject.actions.foo.bar).toBeDefined();
         });
     });
 });

@@ -14,11 +14,13 @@ function _stubStoreMethods(memo, key) {
     return memo;
 }
 
-function StubFluxxor(stores) {
+function StubFluxxor(stores, actions) {
     this._stores = _(stores).chain()
         .forIn()
         .reduce(_createStubStore, {})
         .value();
+
+    this.actions = actions;
 }
 
 StubFluxxor.prototype.store = function(storeKey) {
